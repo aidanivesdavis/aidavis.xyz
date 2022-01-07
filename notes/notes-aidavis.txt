@@ -1,0 +1,12 @@
+AIDAVIS.XYZ NOTES
+
+    * I'm Aidan. I make websites. <Linkedin> <Github>
+    * Have the word "websites" highlighted. Hovering or clicking triggers a drop-down with titles and previews.
+    * Everything involving filepaths should be relative so that it's easy to move things around.
+
+When the user requests weather and there are multiple possible locations, return the list and let them click on the one they want.
+Maybe also have a search function on your page.
+
+Make sure all sites work on chrome, edge, safari, and firefox.
+
+Put on github.

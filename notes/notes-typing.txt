@@ -1,0 +1,52 @@
+NEXT
+
+    * Weird problem - hitting space creates a "typo", even if it's correct. My guess is \s is being compared to an actual space character... but then it goes away when you keep typing.
+    * This problem doesn't happen in firefox.
+
+TODO
+
+Did I fix the weird issue with how the site was automatically adding and taking away newlines??? It's a weird error that might embarass you when someone does just the right thing!
+
+How do you find the end of a sentence?
+HAS to have one or more of: .?!
+CAN have one or more of ' " )
+All of these must be adjacent.
+Almost any combination.
+Look for one of .?! and then get all the other adjacent ones. Find the last index.
+/[.?!'")]*[.?!][.?!'")]*/
+
+* Break Frankenstein into paragraphs and put them all into an array to be drawn from randomly.
+    * LETTER I.
+    * THE END.
+    * Need to account for starting in a lame place - should always be at the beginning of a paragraph, but not the beginning of a quote (so we're not in the middle of conversation). Don't want to go into a new section either. Don't include short paragraphs unless they're in the middle of a sample of text. Better yet, only allow ONE paragraph per sample to keep it simple. Cut it off if it's too long.
+    * Get rid of all the newline characters so that you don't detect typos that aren't really there!
+    * At least 500 characters, all from the same paragraph, starting at the beginning of that paragraph.
+
+    * Find non-whitespace after two consecutive newlines. If there are at least 500 characters, take all of them to the end of the very next sentence. Otherwise, don't take anything. Then, for each sample, remove all the newlines. Put all samples in an array.
+        1. Split into array.
+        2. Replace newlines with spaces.
+        3. Remove those less than 500.
+        4. Trim to end of sentence.
+
+* Rewrite things with classes to associate related functions and data in objects.
+* Rewrite things with array methods to avoid ugly loops.
+
+ARRAY METHODS
+
+    .forEach()
+        NOT a for loop. Simply passes each item into the callback function.
+    .map()
+        Maps to a new array.
+    .filter()
+        This filters out elements with a boolean test.
+    .reduce()
+        Initial value, accumulator shit. Generally don't use.
+    .every()
+        Returns true if true for every element. (Elements are passed to callback.)
+    .some()
+        Returns true if true for some element.
+
+SCRATCH
+
+    * split requires global tag?
+    * try again with sample text. What the fuck changed? Why is there only one item in the array? Why did it take no time at all to run? Does readFile actually pull the entire file in?

@@ -1,0 +1,20 @@
+PASSPHRASE GENERATOR NOTES
+
+TODO
+
+    * Send a simple get request to the server and get a response back.
+    * Move the compromised passphrase checking to the backend.
+
+    * Get rid of the checkbox.
+    * Get the API for password checking to work.
+    * Get the full functionality working.
+    * Commit.
+    * Set up the server program.
+    * Commit.
+    * Set up the Raspberry Pi.
+    * Start styling with bootstrap.
+
+MAYBE
+
+    * Replace loops and stuff with .forEach and other newish methods?
+    * Filter random words.
